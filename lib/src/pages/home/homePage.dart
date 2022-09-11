@@ -13,16 +13,22 @@ class HomePage extends StatelessWidget {
         
         padding: const EdgeInsets.all(10.0),
       
-        child: Column(
-          
-          children: const [
-            SizedBox(height: 20,),
-            Encabezado(),
-            SizedBox(height: 20,),
-            Masmenos(),
-            SizedBox(height: 20,),
-            Comprobantes()
+        child: ListView(
+          children: [
+            Column(
+            
+            children: const [
+              SizedBox(height: 20,),
+              Encabezado(),
+              SizedBox(height: 20,),
+              Masmenos(),
+              SizedBox(height: 20,),
+              Comprobantes(),
+              SizedBox(height: 20,),
+            ],
+          ),
           ],
+          
         ),
       ),
     );
