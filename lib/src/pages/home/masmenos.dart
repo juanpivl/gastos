@@ -9,8 +9,8 @@ class Masmenos extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceAround ,
       
       children: [
-        _Contenedor(titulo:'Ingresos',data: Icons.call_made,valor: '\$3213',color: Colors.blue,),
-        _Contenedor(titulo:'Egresos',data: Icons.call_received ,valor: '\$2312134',color:Colors.white),
+        _Contenedor(titulo:'Ingresos',data: Icons.call_made,valor: (3213),color: Color.fromARGB(255, 1, 248, 50),),
+        _Contenedor(titulo:'Egresos',data: Icons.call_received ,valor: 2312134 ,color:Color.fromARGB(255, 255, 4, 4)),
       ],
     );
   }
@@ -19,7 +19,7 @@ class Masmenos extends StatelessWidget {
 }
 
 class _Contenedor extends StatelessWidget {
-  final String valor;
+  final int valor;
   final IconData data;
   final Color color;
   final String titulo;
@@ -39,11 +39,12 @@ class _Contenedor extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(titulo),
+            SizedBox(height: 10,),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(data),
-                Text(valor)
+                Text('$valor')
               
             ]),
           ],

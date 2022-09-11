@@ -6,19 +6,38 @@ class Encabezado extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 150,
-      width: double.infinity,
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(15),
-        
-      ),
+      padding: const EdgeInsets.all(30),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('MI DINERO'),
-          Text('\$5500'),
-          Text('-\$500'),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: const [
+              Text(
+                'TOTAL BALANCE',
+                style:
+                    TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+              ),
+              Icon(
+                Icons.settings,
+                color: Colors.white,
+              )
+            ],
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          const Text(
+            '\$43 154',
+            style: TextStyle(
+                color: Colors.white, fontWeight: FontWeight.bold, fontSize: 40),
+          ),
+          const Text(
+            '+ \$554 today',
+            style: TextStyle(
+                color: Colors.green, fontWeight: FontWeight.bold, fontSize: 15),
+          ),
+          
         ],
       ),
     );
