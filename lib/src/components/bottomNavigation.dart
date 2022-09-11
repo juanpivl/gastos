@@ -41,14 +41,16 @@ class _BottomNavitationState extends State<BottomNavitation> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
       bottomNavigationBar: CurvedNavigationBar(
         index: pageindex,
-        backgroundColor: Color.fromARGB(255, 250, 3, 3),
-        color: Color.fromARGB(255, 69, 50, 239),
+        backgroundColor: Colors.white,
+        color: Color.fromRGBO(16, 36, 84, 1),
+        
         items: const <Widget>[
-          Icon(Icons.add_card , size: 30),
-          Icon(Icons.home, size: 30),
-          Icon(Icons.cancel_presentation_outlined , size: 30),
+          Icon(Icons.add_card , size: 30,color: Colors.white,),
+          Icon(Icons.home, size: 30,color: Colors.white,),
+          Icon(Icons.cancel_presentation_outlined , size: 30,color: Colors.white,),
         ],
         onTap: (int tappedIndex) {
           setState(() {
@@ -57,7 +59,7 @@ class _BottomNavitationState extends State<BottomNavitation> {
           
         },
       ),
-       body: Center(child: _showPage,)
+       body: _showPage
     
     );
   }

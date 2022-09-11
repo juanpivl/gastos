@@ -9,7 +9,8 @@ class Menu extends StatelessWidget {
     return const SafeArea(
       child: 
     Scaffold(
-      bottomNavigationBar: 
+      
+      bottomNavigationBar:
       BottomNavitation(),
     
    
