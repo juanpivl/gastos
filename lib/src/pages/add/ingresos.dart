@@ -19,15 +19,14 @@ class IngresosPage extends StatelessWidget {
                 SizedBox(height: 100,),
                 Center(child: Text('Movimientos',style: TextStyle(fontSize: 25,color: Color.fromRGBO(16, 36, 84, 1)),)),
                  SizedBox(height: 30,),
-                Formulario(),
+                Formulario(data: Icons.wallet_rounded,text: 'Concepto',),
                 SizedBox(height: 30,),
-                Formulario(),
+                Formulario(data: Icons.money,text: 'Cantidad',),
                 SizedBox(height: 30,),
-                Formulario(),
+                Formulario(data: Icons.date_range_outlined,text: 'Fecha',),
                  SizedBox(height: 30,),
 
-                 FloatingActionButton(onPressed: null, 
-                 child: Text('Aceptar'),)
+                 FloatingActionButton.extended(onPressed: null , label: Text('Ingresar'),backgroundColor: Color.fromRGBO(16, 36, 84, 1),icon: Icon(Icons.add),)
                
             ],
             

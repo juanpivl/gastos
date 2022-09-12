@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "723771846233",
+    "project_id": "gastos-119fb",
+    "storage_bucket": "gastos-119fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:723771846233:android:fd4d5a58180a3af7878b48",
+        "android_client_info": {
+          "package_name": "com.example.gastos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "723771846233-duail69me5oc31tbreqkk4o2ne6ab3pq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHY5qrb9kPMq7x2Q3Map22NqDpyGKDLqs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "723771846233-duail69me5oc31tbreqkk4o2ne6ab3pq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
