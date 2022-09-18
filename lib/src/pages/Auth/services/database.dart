@@ -29,22 +29,7 @@ class DatabaseService {
     });
   }
 
-//get list from snapshot
-  List<Usuario?> _clientesListFromSnapshot(QuerySnapshot snapshot) {
-    return snapshot.docs.map((document) {
-      return Usuario(
-        name: document.get('name'),
-        total: document.get('total'),
-        masmenos: document.get('masmenos'),
-        concepto: document.get('concepto'),
-        fecha: document.get('fecha'),
-        cantidad: document.get('cantidad')
 
-        
-      );
-    }).toList();
-  
-  }
 
   //userData from snapshot
   UserData _userDataFromSnapshot(DocumentSnapshot snapshot) {
@@ -61,11 +46,7 @@ class DatabaseService {
     
   
 
-  //get clientes stream
-  Stream<List<Usuario?>> get clientes {
-    return clientesCollection.snapshots()
-    .map(_clientesListFromSnapshot);
-  }
+  
 
   //get user doc stream
   Stream<UserData>get userData{

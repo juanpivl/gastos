@@ -15,7 +15,7 @@ class HomePage extends StatelessWidget {
               Encabezado(),
               SizedBox(height: 40,),
               Center(child: Text('Movimientos',style: TextStyle(fontSize: 25,color: Color.fromRGBO(16, 36, 84, 1)),)),
-              Comprobantes(),
+            Comprobantes(),
             ],
           ),
         ]),

@@ -181,15 +181,17 @@ class _FormularioState extends State<Formulario> {
                       loading = true;
                     
                     });
-                     dynamic result =
-                                await _auth.registerWithEmail(email, password,name);
+                    dynamic result =
+                            await _auth.registerWithEmail(email, password,name);
                             if (result == null) {
                               setState(() {
                                 error = 'Ingresar un email valido';
                                 loading = false;
                               });
                               }
+                    
               }
+               
              
             },
           )

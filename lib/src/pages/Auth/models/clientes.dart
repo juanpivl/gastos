@@ -10,15 +10,15 @@ class Clientes{
 
 class UserData{
 
-    String? uid;
-   String name;
-   int total;
-   int masmenos;
-   String concepto;
-   String fecha;
-  int cantidad;
+     String? uid;
+  String? name;
+   String? total;
+    String? masmenos;
+    String? concepto;
+   String? fecha;
+   String?  cantidad;
 
-  UserData( {this.uid, required this.name,required this.total, required this.masmenos, required this.concepto, required this.fecha, required this.cantidad});
+  UserData( {this.uid, this.name, this.total,  this.masmenos,  this.concepto,  this.fecha,  this.cantidad});
 
 
 

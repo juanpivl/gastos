@@ -16,6 +16,7 @@ class Encabezado extends StatefulWidget {
 class _EncabezadoState extends State<Encabezado> {
   @override
   Widget build(BuildContext context) {
+    final AuthService _auth = AuthService();
     return Container(
             padding: const EdgeInsets.all(30),
             child: Column(
@@ -33,7 +34,7 @@ class _EncabezadoState extends State<Encabezado> {
                           color: Colors.white, fontWeight: FontWeight.bold),
                     ),
                     IconButton(onPressed:  () async{
-                        //_auth.signOut();
+                        _auth.signOut();
                       }, icon: Icon(Icons.logout,color: Colors.white,))
                     
                     
