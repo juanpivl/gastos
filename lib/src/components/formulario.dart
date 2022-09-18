@@ -4,8 +4,11 @@ class Formulario extends StatelessWidget {
 
   final IconData data;
   final String text;
+  final TextInputType keyboardType;
+  final Color color;
+  final Color letra;
 
-  const Formulario({super.key, required this.data, required this.text});
+  const Formulario({super.key, required this.data, required this.text, required this.keyboardType, required this.color, required this.letra });
 
 
  
@@ -17,24 +20,24 @@ class Formulario extends StatelessWidget {
     return Container(
               width: 300,
               decoration: BoxDecoration(
-                  color: const Color.fromRGBO(16, 36, 84, 1), borderRadius: BorderRadius.circular(19)),
+                  color: color, borderRadius: BorderRadius.circular(19)),
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: TextFormField(
                 
-                  style: const TextStyle(color: Colors.white),
+                  style:  TextStyle(color: letra),
                   decoration: InputDecoration(
                     
                     border: InputBorder.none,
-                    icon: Icon(data,color: Colors.white,),
+                    icon: Icon(data,color: letra,),
                     
                     focusColor: Theme.of(context).primaryColor,
                     hintText: text,
-                    hintStyle: const TextStyle(color: Colors.white)
+                    hintStyle:  TextStyle(color: letra)
                     
                   ),
                   autocorrect: false,
-                  
+                  keyboardType: keyboardType,
                   onChanged: (val) {
                     
                   },

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class Comprobantes extends StatelessWidget {
-  const Comprobantes({super.key});
 
   @override
   Widget build(BuildContext context) {
