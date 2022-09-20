@@ -3,20 +3,19 @@ import 'package:gastos/src/components/background.dart';
 import 'package:gastos/src/pages/home/components.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
         body: Stack(children: [
-          Background(),
+          const Background(),
           Column(
-            children: const [
+            children: [
               Encabezado(),
               SizedBox(height: 40,),
               Center(child: Text('Movimientos',style: TextStyle(fontSize: 25,color: Color.fromRGBO(16, 36, 84, 1)),)),
-              Comprobantes()
+            Comprobantes(),
             ],
           ),
         ]),
